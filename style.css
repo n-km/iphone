@@ -45,19 +45,23 @@ body {
 }
 .settings {
     display: table;
+    width: 100%;
 }
-.color {
+.bar {
+  height: 30px;
     display: flex;
+    justify-content: center;
+    align-items: stretch;
     margin-top: 5px;
     transition: 0.5s;
     border-radius: 30px;
 }
-.color:hover {
+.bar:hover {
     background-color: rgba(255, 255, 255, 0.534);
 }
 .spec {
-    height: 15px;
-    width: 15px;
+    height: 5px;
+    width: 5px;
     border-radius: 100%;
     background-color: white;
     padding: 2px;
@@ -66,14 +70,22 @@ body {
     border-color: rgb(175, 175, 175);
     border-style: double;
     filter: brightness(0.5);
-    transition: 0.5s;
+    transition: 0.3s;
     cursor: pointer;
 }
 .spec:hover {
     filter: brightness(1);
+    height: 15px;
+    width: 15px;
+    border-color: transparent;
+}
+.spec:active {
+  height: 18px;
+  width: 18px;
+  transition: 0s;
 }
 .info {
-    margin-top: 40px;
+    margin-top: 30px;
     padding: 5px;
     border-radius: 10px;
     background-color: white;
@@ -82,7 +94,14 @@ body {
     font-family: arial;
     font-size: 10px;
 }
-
+.apple {
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border-radius: 100%;
+  margin: 5px;
+  padding: 2px;
+}
 #red > #redtext {
     display: none;
   }

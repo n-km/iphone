@@ -10,7 +10,7 @@
     </head>
     <body>
        
-        <div class="phone">
+        <div class="phone" id="RGB">
             <div class="frame">
                 <div class="display">
                     <div class="notch">
@@ -19,8 +19,8 @@
                 </div>
             </div>
             <div class="settings">
-                <div class="color">
-                    <div class="spec" style="background-color: red;" id="red">
+                <div class="bar">
+                    <div class="spec" style="background-color: red;" id="red" onclick="RGB.style.backgoround = 'red'">
                         <p id="redtext" class="info">red</p>
                     </div>
                     <div class="spec" style="background-color: yellow;" id="yellow">
@@ -39,6 +39,9 @@
                         <p id="bluetext" class="info">blue</p>
                     </div>
                 </div>
+                <br>
+                <br>
+                
             </div>
         </div>
         
