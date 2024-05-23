@@ -1,3 +1,6 @@
+html {
+  cursor: url(cursor/normal.cur), auto;
+}
 body {
     margin: 0;
     display: flex;
@@ -71,7 +74,7 @@ body {
     border-style: double;
     filter: brightness(0.5);
     transition: 0.3s;
-    cursor: pointer;
+    cursor: none;
 }
 .spec:hover {
     filter: brightness(1);
@@ -89,7 +92,7 @@ body {
     border-radius: 10px;
     background-color: white;
     width: fit-content;
-    transition: 0.5s;
+    transition: 0.3s;
     font-family: arial;
     font-size: 10px;
 }
@@ -101,48 +104,47 @@ body {
   margin: 5px;
   padding: 2px;
 }
-#red > #redtext {
-    display: none;
-  }
-  
-#red:hover > #redtext {
-    display: block;
-  }
-  #yellow > #yellowtext {
-    display: none;
-  }
-  
-#yellow:hover > #yellowtext {
-    display: block;
-  }
-  #white > #whitetext {
-    display: none;
-  }
-  
-#white:hover > #whitetext {
-    display: block;
-  }
-  #coral > #coraltext {
-    display: none;
-  }
-  
-#coral:hover > #coraltext {
-    display: block;
-  }
+.spec > .info {
+  filter: brightness(0);
+}
 
-  #black > #blacktext {
-    display: none;
-  }
-  
-#black:hover > #blacktext {
-    display: block;
-  }
-
-  #blue > #bluetext {
-    display: none;
-  }
-  
-#blue:hover > #bluetext {
-    display: block;
-  }
-
+.spec:hover > .info {
+  filter: brightness(1);
+}
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0);
+  border-radius: 0 0 5px 0;
+  transition: 0.5s;
+}
+.menu:hover {
+  background-color: white;
+  box-shadow: 0 0 3px white;
+}
+.content {
+  filter: brightness(0.3);
+  transition: 0.5s;
+}
+.menu:hover > .content {
+  filter: brightness(1);
+}
+.menu button {
+  padding: 3px;
+  border-radius: 5px;
+  border-width: 1px;
+  background-color: white;
+  color: black;
+  margin: 3px;
+  cursor: none;
+  transition: 0.1s;
+}
+.menu button:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-width: 1px 1px 1px 15px;
+}
