@@ -77,7 +77,6 @@ body {
     filter: brightness(1);
     height: 15px;
     width: 15px;
-    border-color: transparent;
 }
 .spec:active {
   height: 18px;
