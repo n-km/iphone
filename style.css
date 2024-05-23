@@ -1,149 +1,45 @@
 body {
     margin: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-top: 25vh;
+    align-items: center;
+    margin-top: 10vh;
     background-color: black;
+    font-family: arial;
+}
+h1 {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.616);
+    box-shadow: 0 0 10px white;
 }
 .phone {
-    height: 450px;
-    width: 230px;
-    background-color: transparent;
-    border-radius: 20px;
-    transition: 0.5s;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: double;
+    border-color: white;
 }
 .phone:hover {
-    box-shadow: 0 0 20px white;
+    box-shadow: 0 0 10px white;
 }
-.frame {
-    height: 100%;
+.phone h3 {
+    color: white;
+}
+.phone button {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.664);
     width: 100%;
-    background-color: black;
-    border-radius: 20px;
-    margin-top: 10px;
-}
-.display {
-    height: 97%;
-    width: 210px;
-    margin-left: 10px;
-    background-color: black;
-    border-radius: 10px;
-    transition: 0.5s;
-    text-align: center;
-}
-.display:hover {
-    background-color: white;
-}
-.notch {
-    width: 65%;
-    height: 20px;
-    margin-left: 17.5%;
-    background-color: black;
-    border-radius: 0 0 50px 50px;
-    margin-top: 5px;
-}
-.settings {
-    display: table;
-    width: 100%;
-}
-.bar {
-  height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    margin-top: 5px;
-    transition: 0.5s;
-    border-radius: 30px;
-}
-.bar:hover {
-    background-color: rgba(255, 255, 255, 0.534);
-}
-.spec {
-    height: 5px;
-    width: 5px;
-    border-radius: 100%;
-    background-color: white;
-    padding: 2px;
-    margin: 5px;
-    border-width: 5px;
-    border-color: rgb(175, 175, 175);
-    border-style: double;
-    filter: brightness(0.5);
-    transition: 0.3s;
-    cursor: pointer;
-}
-.spec:hover {
-    filter: brightness(1);
-    height: 15px;
-    width: 15px;
-    border-color: transparent;
-}
-.spec:active {
-  height: 18px;
-  width: 18px;
-  transition: 0s;
-}
-.info {
-    margin-top: 30px;
     padding: 5px;
     border-radius: 10px;
+    border-width: 0px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.phone button:hover {
+    color: black;
     background-color: white;
-    width: fit-content;
-    transition: 0.5s;
-    font-family: arial;
-    font-size: 10px;
+    
 }
-.apple {
-  height: 15px;
-  width: 15px;
-  background-color: white;
-  border-radius: 100%;
-  margin: 5px;
-  padding: 2px;
-}
-#red > #redtext {
-    display: none;
-  }
-  
-#red:hover > #redtext {
-    display: block;
-  }
-  #yellow > #yellowtext {
-    display: none;
-  }
-  
-#yellow:hover > #yellowtext {
-    display: block;
-  }
-  #white > #whitetext {
-    display: none;
-  }
-  
-#white:hover > #whitetext {
-    display: block;
-  }
-  #coral > #coraltext {
-    display: none;
-  }
-  
-#coral:hover > #coraltext {
-    display: block;
-  }
-
-  #black > #blacktext {
-    display: none;
-  }
-  
-#black:hover > #blacktext {
-    display: block;
-  }
-
-  #blue > #bluetext {
-    display: none;
-  }
-  
-#blue:hover > #bluetext {
-    display: block;
-  }
-
